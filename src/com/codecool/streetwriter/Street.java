@@ -1,12 +1,14 @@
 package com.codecool.streetwriter;
 
 import com.codecool.streetwriter.house.House;
+;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 public class Street {
+
     private String name;
     private Set<House> houses;
 
@@ -14,11 +16,13 @@ public class Street {
     public Street(String name) {
         this.name = name;
         this.houses = new HashSet<>();
+
     }
 
     public Street(String name, House... houses) {
         this.name = name;
         this.houses = new HashSet<>(Arrays.asList(houses));
+
     }
 
     public void build(House house) {
@@ -43,4 +47,5 @@ public class Street {
             }
         return true;
     }
+
 }

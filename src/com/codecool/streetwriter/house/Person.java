@@ -1,5 +1,7 @@
 package com.codecool.streetwriter.house;
 
+;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -10,6 +12,9 @@ public class Person {
     public Person(String name) {
         this.name = name;
         this.properties = new HashSet<>();
+
+        
+
     }
 
     public void buy(House house) {
